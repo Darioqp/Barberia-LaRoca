@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 8em;
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.3em;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 0.5em;
+    font-size: 3em;
+    color: #000;
+    font-style: italic;
+}
+
+.navegacion a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s all;
+}
+
+.navegacion a:hover {
+    color: orange;
+}
+
+.navegacion a:active {
+    color: white
+}
+
+.banner {
+    width: 100%;
+    border: 2px solid black;
+}
+
+main {
+    box-sizing: border-box;
+    height: 100%;
+    background: linear-gradient(180deg, white, #cdcdcd, white);
+}
+
+.info {
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    padding-bottom: 1em;
+    text-shadow: 1px 1px 5px rgb(97, 96, 96);
+}
+
+.info p {
+    padding-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.info p span {
+    font-weight: bold;
+}
+
+.mapa {
+    width: 60%;
+    margin: 1em auto;
+}
+
+.mapa h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.diferenciales {
+    width: 80%;
+    margin: 2em auto;
+    padding-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diferenciales h2 {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.caja1 ul li {
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+.caja1 li::before {
+    content: "✅ ";
+}
+
+.caja2 img {
+    width: 30em;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px;
+    transition: 1s all;
+}
+
+.caja2 img:hover {
+    opacity: 0.6;
+    box-shadow: 10px 10px 30px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    color: white
+}
+
+footer img {
+    width: 20%;
+    transition: 2s all;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    .navegacion {
+        font-size: 1.2em;
+        padding: 1em 0;
+    }
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .mapa {
+        width: 90%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .caja1 ul li {
+        font-size: 1.3em;
+        display: block;
+    }
+    .caja2 img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 920px) {
+    ul li {
+        display: block;
+        padding: 0.2em 0;
+    }
+    .mapa {
+        width: 80%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+    

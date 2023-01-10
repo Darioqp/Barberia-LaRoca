@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="shortcut icon" href="/imagenes/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <a href=""><img id="logo" src="/imagenes/Logo.png" alt="Imagen de logotipo barbería La roca" /></a>
+      <h1>La Roca</h1>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Formulario de contacto</h2>
+    <h2>Realizá tu reserva</h2>
+    <main>
+      <div class="formulario">
+        <form action="">
+            <label for="nombre" class="label-texto">Nombre: </label>
+            <input type="text" class="input-text" id="nombre" placeholder="Ingresa tu nombre" required />
+            <label for="apellido" class="label-texto">Apellido: </label>
+            <input type="text" class="input-text" id="apellido" placeholder="Ingresa tu apellido" required />
+            <label for="telefono" class="label-texto">Teléfono: </label>
+            <input type="tel" class="input-text" name="" id="telefono" placeholder="(XXX) XXXXXXX" required />
+            <label for="correo" class="label-texto">Email: </label>
+            <input type="email" class="input-text" name="" id="correo" placeholder="ejemplo@dominio.com" required />
+            <label for="caja-texto" class="label-texto">Comentarios:</label>
+            <textarea name="" class="input-text" id="caja-texto" cols="30" rows="10" placeholder="Déjanos tu comentario..."></textarea>
+
+            <!-- La etiqueta fieldset nos permite agrupar datos o etiquetas relacionadas -->
+          <fieldset> 
+            <legend>¿Cómo le gustaría ser contactado?</legend>
+            <label for="contacto-tel" ><input type="radio" name="tipo-contacto" id="contacto-tel" checked/>Teléfono</label>
+            <label for="contacto-whatsapp" ><input type="radio" name="tipo-contacto" id="contacto-whatsapp" />Whatsapp</label>
+            <label for="contacto-mail" ><input type="radio" name="tipo-contacto" id="contacto-mail" />Email</label>
+          </fieldset>
+          <fieldset>
+            <legend>¿A través de qué medio conocíste Berbería La Roca?</legend>
+            <select name="" class="boton">
+              <option value="" disabled>Seleccionar</option>
+              <option value="">Instagram</option>
+              <option value="">Facebook</option>
+              <option value="">Twitter</option>
+              <option value="">Televisión</option>
+              <option value="">Radio</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="ofertas">
+            <input type="checkbox" name="" id="" checked/>
+            <p>Acepto recibir ofertas y novedades de la barbería La Roca.</p>
+          </fieldset>
+            
+          <input type="submit" value="Enviar" class="boton"/>
+        </form>
+        <table class="tabla-horarios">
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>8 ~ 20 hs</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>8 ~ 18 hs</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>8 ~ 20 hs</td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>8 ~ 18 hs</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>8 ~ 20 hs</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>8 ~ 13 hs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <a href="#encabezado"
+        ><img
+          src="/imagenes/Logo-blanco.png"
+          alt="Imagen del logo de la barbería"
+      /></a>
+
+      <p>
+        Copyright &copy; Barbería La Roca - 2022 - Desarrollado por Dario Kupec.
+      </p>
+    </footer>
+  </body>
+</html>

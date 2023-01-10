@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 8em;
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.3em;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 0.5em;
+    font-size: 3em;
+    color: #000;
+    font-style: italic;
+}
+
+.navegacion a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s all;
+}
+
+.navegacion a:hover {
+    color: orange;
+}
+
+.navegacion a:active {
+    color: white
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
+    padding-top: 0.7em;
+}
+
+.productos {
+    margin: 1em auto;
+    width: 80%;
+    padding: 2em 0;
+}
+
+.caja-producto {
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 0  0 20px 20px;
+    border-top-width: 15px;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 1em 1em;
+    height: 500px;
+}
+
+.caja-producto h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.caja-producto img {
+    width: 100%;
+}
+
+.descripcion-producto {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.precio-producto {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    font-weight: bold;
+
+}
+
+.caja-producto:hover {
+    border: 2px solid orange;
+    color: orange;
+    box-shadow: 10px 10px 30px rgb(175, 114, 0);
+}
+
+.caja-producto:hover h3 {
+    font-size: 1.8em;
+}
+
+.video {
+    margin: 1em auto;
+    width: 640px;
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    color: white
+}
+
+footer img {
+    width: 20%;
+    transition: 2s all;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+    .navegacion {
+        font-size: 1.2em;
+        padding: 1em 0;
+    }
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 920px) {
+    ul li {
+        display: block;
+        padding: 0.2em 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1025px) {
+    .caja-producto {
+        display: block;
+        height: auto;
+        width: 50%;
+        margin: 0 auto 1.5em;
+    }
+    .caja-producto h3 {
+        font-size: 2em;
+    }
+    .caja-producto:hover h3 {
+        font-size: 2.2em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .caja-producto {
+        display: block;
+        height: auto;
+        width: 60%;
+        margin: 0 auto 1.5em;
+    }
+    .caja-producto h3 {
+        font-size: 2em;
+    }
+    .caja-producto:hover h3 {
+        font-size: 2.2em;
+    }
+}
