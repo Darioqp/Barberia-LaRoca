@@ -131,6 +131,7 @@ h2 {
 .caja1 ul li {
     padding: 1em 0;
     font-size: 1.5em;
+    display: block;
 }
 
 .caja1 li::before {
